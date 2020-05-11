@@ -28,7 +28,6 @@ def compute_sta(stim, rho, num_timesteps):
     
     sta = np.zeros((num_timesteps,))
     
-
     # This command finds the indices of all of the spikes that occur
     # after 300 ms into the recording.
     spike_times = rho[num_timesteps:].nonzero()[0] + num_timesteps
@@ -37,7 +36,6 @@ def compute_sta(stim, rho, num_timesteps):
     # before 300 ms into the recording.
     num_spikes = len(spike_times)
     
-    print(num_spikes)
     # Compute the spike-triggered average of the spikes found.
     # To do this, compute the average of all of the vectors
     # starting 300 ms (exclusive) before a spike and ending at the time of
