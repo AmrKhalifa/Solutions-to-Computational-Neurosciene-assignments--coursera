@@ -9,11 +9,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-import numpy as np
-import matplotlib.pyplot as plt
-
-import pickle
-
 
 def compute_sta(stim, rho, num_timesteps):
     """Compute the spike-triggered average from a stimulus and spike-train.
