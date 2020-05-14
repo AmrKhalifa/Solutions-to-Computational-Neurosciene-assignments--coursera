@@ -1,1 +1,1 @@
-# Solutions-to-Computational-NeuroSciene-assignments---coursera
+# Solutions-to-Computational-NeuroSciene-assignments-coursera
