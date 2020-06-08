@@ -31,6 +31,6 @@ for value in values:
 ## By plotting the results best value was found to be 5.667 
 
 best = min(results, key = lambda x: x[1])[0]
-
+print(best)
 plt.axvline(x=best, color = 'r')
 plt.show()
