@@ -79,8 +79,8 @@ def get_angle(c):
 	angle = (np.arctan2(c[1], c[0])*180/np.pi)
 	return angle if angle>0  else 360+angle 
 
-cs_ang = [get_angle(c) for c in cs]
+direction = sum(i for i in [r * c for r,c in zip(rs, cs)])
 
-direction = np.dot(np.array(cs_ang), np.array(rs))
+direction = get_angle(direction)
 
 print("Angle of stimulus = ", direction)
